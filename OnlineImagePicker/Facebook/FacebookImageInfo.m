@@ -24,7 +24,7 @@
     for (NSDictionary *image in images) {
         NSURL *url = [NSURL URLWithString:[image objectForKey:@"source"]];
         if (!thumbnail)
-            url = thumbnail;
+            thumbnail = url;
         else {
             NSNumber *width = [image objectForKey:@"width"];
             NSNumber *height = [image objectForKey:@"height"];
