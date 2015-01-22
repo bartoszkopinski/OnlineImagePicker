@@ -36,7 +36,7 @@
     return thumbnail;
 }
 
--(NSURL *) fullsizeURL {
+-(NSURL *) fullSizeURL {
     CGSize currentSize = CGSizeZero;
     NSArray *images = [self.photoData objectForKey:@"images"];
     NSURL *url = nil;
