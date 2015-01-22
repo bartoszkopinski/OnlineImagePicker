@@ -72,7 +72,7 @@
             self.after = [paging objectForKey:@"after"];
             
             NSArray *data = [result objectForKey:@"data"];
-            NSMutableArray *results = [NSMutableArray arrayWithCapacity:data.count];
+            results = [NSMutableArray arrayWithCapacity:data.count];
             for (NSDictionary *photo in data)
                 [results addObject:[[FacebookImageInfo alloc] initWithData:photo]];
         } else {
